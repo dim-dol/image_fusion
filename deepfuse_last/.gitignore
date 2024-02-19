@@ -1,0 +1,12 @@
+### Tensorflow checkpoint files
+#/TEST.data-00000-of-00001
+#/TEST.index
+#/TEST.meta
+/checkpoint
+
+### Model(protobuf/tflite/rknn) & Image evaluation output folder
+#/outputs
+
+### Python cache
+__pycache__
+*.pyc
