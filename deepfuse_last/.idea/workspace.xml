@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5fe6e936-f62a-450d-bcab-28a39e4c0b9f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="5fe6e936-f62a-450d-bcab-28a39e4c0b9f" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,7 +15,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectId" id="29jhpSZH73IdsxZy9TCNJhjjXjh" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -36,8 +34,8 @@
       <recent name="C:\Users\ns002\PycharmProjects\deepfuse_last" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.tkinter_gui">
-    <configuration name="add_color" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.image_fusion">
+    <configuration name="image_fusion" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="deepfuse_last" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -49,7 +47,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/add_color.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/image_fusion.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -144,11 +142,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.image_fusion" />
+        <item itemvalue="Python.main" />
         <item itemvalue="Python.tkinter_gui" />
         <item itemvalue="Python.new_fusion_gui_version" />
-        <item itemvalue="Python.main" />
         <item itemvalue="Python.plt_test" />
-        <item itemvalue="Python.add_color" />
       </list>
     </recent_temporary>
   </component>
@@ -182,46 +180,46 @@
       <screen x="-1920" y="0" width="1858" height="1080" />
     </state>
     <state x="-1180" y="298" key="FileChooserDialogImpl/-1920.0.1858.1080/0.0.1858.1080@-1920.0.1858.1080" timestamp="1707975059094" />
-    <state width="1899" height="302" key="GridCell.Tab.0.bottom" timestamp="1707977830806">
-      <screen x="-1920" y="0" width="1858" height="1080" />
+    <state width="1837" height="352" key="GridCell.Tab.0.bottom" timestamp="1708404204778">
+      <screen x="0" y="0" width="1858" height="1080" />
     </state>
     <state width="1899" height="302" key="GridCell.Tab.0.bottom/-1920.0.1858.1080/0.0.1858.1080@-1920.0.1858.1080" timestamp="1707977830806" />
-    <state width="1837" height="390" key="GridCell.Tab.0.bottom/-1920.0.1858.1080/0.0.1858.1080@0.0.1858.1080" timestamp="1704762095899" />
-    <state width="1899" height="302" key="GridCell.Tab.0.center" timestamp="1707977830806">
-      <screen x="-1920" y="0" width="1858" height="1080" />
+    <state width="1837" height="352" key="GridCell.Tab.0.bottom/-1920.0.1858.1080/0.0.1858.1080@0.0.1858.1080" timestamp="1708404204778" />
+    <state width="1837" height="352" key="GridCell.Tab.0.center" timestamp="1708404204778">
+      <screen x="0" y="0" width="1858" height="1080" />
     </state>
     <state width="1899" height="302" key="GridCell.Tab.0.center/-1920.0.1858.1080/0.0.1858.1080@-1920.0.1858.1080" timestamp="1707977830806" />
-    <state width="1837" height="390" key="GridCell.Tab.0.center/-1920.0.1858.1080/0.0.1858.1080@0.0.1858.1080" timestamp="1704762095899" />
-    <state width="1899" height="302" key="GridCell.Tab.0.left" timestamp="1707977830806">
-      <screen x="-1920" y="0" width="1858" height="1080" />
+    <state width="1837" height="352" key="GridCell.Tab.0.center/-1920.0.1858.1080/0.0.1858.1080@0.0.1858.1080" timestamp="1708404204778" />
+    <state width="1837" height="352" key="GridCell.Tab.0.left" timestamp="1708404204778">
+      <screen x="0" y="0" width="1858" height="1080" />
     </state>
     <state width="1899" height="302" key="GridCell.Tab.0.left/-1920.0.1858.1080/0.0.1858.1080@-1920.0.1858.1080" timestamp="1707977830806" />
-    <state width="1837" height="390" key="GridCell.Tab.0.left/-1920.0.1858.1080/0.0.1858.1080@0.0.1858.1080" timestamp="1704762095899" />
-    <state width="1899" height="302" key="GridCell.Tab.0.right" timestamp="1707977830806">
-      <screen x="-1920" y="0" width="1858" height="1080" />
+    <state width="1837" height="352" key="GridCell.Tab.0.left/-1920.0.1858.1080/0.0.1858.1080@0.0.1858.1080" timestamp="1708404204778" />
+    <state width="1837" height="352" key="GridCell.Tab.0.right" timestamp="1708404204778">
+      <screen x="0" y="0" width="1858" height="1080" />
     </state>
     <state width="1899" height="302" key="GridCell.Tab.0.right/-1920.0.1858.1080/0.0.1858.1080@-1920.0.1858.1080" timestamp="1707977830806" />
-    <state width="1837" height="390" key="GridCell.Tab.0.right/-1920.0.1858.1080/0.0.1858.1080@0.0.1858.1080" timestamp="1704762095899" />
-    <state width="1345" height="176" key="GridCell.Tab.1.bottom" timestamp="1704789477674">
-      <screen x="-1920" y="0" width="1858" height="1080" />
+    <state width="1837" height="352" key="GridCell.Tab.0.right/-1920.0.1858.1080/0.0.1858.1080@0.0.1858.1080" timestamp="1708404204778" />
+    <state width="1837" height="352" key="GridCell.Tab.1.bottom" timestamp="1708404204778">
+      <screen x="0" y="0" width="1858" height="1080" />
     </state>
     <state width="1345" height="176" key="GridCell.Tab.1.bottom/-1920.0.1858.1080/0.0.1858.1080@-1920.0.1858.1080" timestamp="1704789477674" />
-    <state width="1837" height="390" key="GridCell.Tab.1.bottom/-1920.0.1858.1080/0.0.1858.1080@0.0.1858.1080" timestamp="1704762103057" />
-    <state width="1345" height="176" key="GridCell.Tab.1.center" timestamp="1704789477674">
-      <screen x="-1920" y="0" width="1858" height="1080" />
+    <state width="1837" height="352" key="GridCell.Tab.1.bottom/-1920.0.1858.1080/0.0.1858.1080@0.0.1858.1080" timestamp="1708404204778" />
+    <state width="1837" height="352" key="GridCell.Tab.1.center" timestamp="1708404204778">
+      <screen x="0" y="0" width="1858" height="1080" />
     </state>
     <state width="1345" height="176" key="GridCell.Tab.1.center/-1920.0.1858.1080/0.0.1858.1080@-1920.0.1858.1080" timestamp="1704789477674" />
-    <state width="1837" height="390" key="GridCell.Tab.1.center/-1920.0.1858.1080/0.0.1858.1080@0.0.1858.1080" timestamp="1704762103057" />
-    <state width="1345" height="176" key="GridCell.Tab.1.left" timestamp="1704789477674">
-      <screen x="-1920" y="0" width="1858" height="1080" />
+    <state width="1837" height="352" key="GridCell.Tab.1.center/-1920.0.1858.1080/0.0.1858.1080@0.0.1858.1080" timestamp="1708404204778" />
+    <state width="1837" height="352" key="GridCell.Tab.1.left" timestamp="1708404204778">
+      <screen x="0" y="0" width="1858" height="1080" />
     </state>
     <state width="1345" height="176" key="GridCell.Tab.1.left/-1920.0.1858.1080/0.0.1858.1080@-1920.0.1858.1080" timestamp="1704789477674" />
-    <state width="1837" height="390" key="GridCell.Tab.1.left/-1920.0.1858.1080/0.0.1858.1080@0.0.1858.1080" timestamp="1704762103057" />
-    <state width="1345" height="176" key="GridCell.Tab.1.right" timestamp="1704789477674">
-      <screen x="-1920" y="0" width="1858" height="1080" />
+    <state width="1837" height="352" key="GridCell.Tab.1.left/-1920.0.1858.1080/0.0.1858.1080@0.0.1858.1080" timestamp="1708404204778" />
+    <state width="1837" height="352" key="GridCell.Tab.1.right" timestamp="1708404204778">
+      <screen x="0" y="0" width="1858" height="1080" />
     </state>
     <state width="1345" height="176" key="GridCell.Tab.1.right/-1920.0.1858.1080/0.0.1858.1080@-1920.0.1858.1080" timestamp="1704789477674" />
-    <state width="1837" height="390" key="GridCell.Tab.1.right/-1920.0.1858.1080/0.0.1858.1080@0.0.1858.1080" timestamp="1704762103057" />
+    <state width="1837" height="352" key="GridCell.Tab.1.right/-1920.0.1858.1080/0.0.1858.1080@0.0.1858.1080" timestamp="1708404204778" />
     <state x="-1683" y="204" key="SettingsEditor" timestamp="1704712677495">
       <screen x="-1920" y="0" width="1858" height="1080" />
     </state>
@@ -248,6 +246,11 @@
           <url>file://$PROJECT_DIR$/main.py</url>
           <line>22</line>
           <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/adaptive_densenet.py</url>
+          <line>35</line>
+          <option name="timeStamp" value="17" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
