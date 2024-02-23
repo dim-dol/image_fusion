@@ -1,27 +1,57 @@
-
+import keras.src.losses
+from skimage.transform import resize
+from skimage.color import rgb2gray
 import numpy as np
 import tensorflow as tf
-from adaptive_densenet import adaptive_densenet
-from scipy.misc import imread, imsave, imresize
+from adaptive_densenet_v2 import model
+import imageio.v2 as imageio
 
-adn = adaptive_densenet()
+image_set = 10
 
-image_num = 1
+class DataGenerator(tf.keras.utils.Sequence):
+    def __init__(self, image_nums, batch_size=4):
+        self.image_nums = image_nums
+        self.batch_size = batch_size
 
-ir_path = '../dataset/dataset_eoir/IR/IR_' + str(image_num) + '.png'
-eo_path = '../dataset/dataset_eoir/EO/EO_' + str(image_num) + '.png'
+    def __len__(self):
+        return int(np.ceil(len(self.image_nums) / float(self.batch_size)))
 
-ir_image = imread(ir_path, mode='L')
-ir_image = imresize(ir_image, (480, 640), 'nearest', mode='L')
-ir_image = ir_image[:,:,np.newaxis]
+    def __getitem__(self, idx):
+        batch_nums = self.image_nums[idx * self.batch_size:(idx + 1) * self.batch_size]
+        ir_images = []
+        eo_images = []
+        targets = []
 
-eo_image = imread(eo_path, mode='RGB')
-eo_image = imresize(eo_image, (480, 640), 'nearest', mode='RGB')
+        for image_num in batch_nums:
+            ir_path = '../dataset/dataset_eoir/IR/' + str(image_num) + '.png'
+            eo_path = '../dataset/dataset_eoir/EO/' + str(image_num) + '.png'
+            target_path = '../dataset/seafusion_result/' + str(image_num) + '.png'
 
-input = np.concatenate((eo_image, ir_image),axis=-1)
-input = tf.expand_dims(input,axis=0)
-input = tf.cast(input, tf.float32)
+            ir_image = imageio.imread(ir_path, pilmode='L')
+            eo_image = imageio.imread(eo_path)
+            target = imageio.imread(target_path)
 
-result_img = adn.dense_net(input)
+            ir_image = resize(ir_image, (480, 640), order=0, preserve_range=True, anti_aliasing=False).astype('float32')
+            ir_image = np.expand_dims(ir_image, axis=-1)
+            eo_image = resize(eo_image, (480, 640), order=0, preserve_range=True, anti_aliasing=False).astype('float32')
+            target = resize(target, (480, 640), order=0, preserve_range=True, anti_aliasing=False).astype('float32')
 
-huber = tf.keras.losses.Huber
+            ir_images.append(ir_image)
+            eo_images.append(eo_image)
+            targets.append(target)
+
+        return [np.array(ir_images), np.array(eo_images)], np.array(targets)
+
+
+
+
+# 모델 훈련
+image_nums = list(range(0, 20))
+
+
+data_generator = DataGenerator(image_nums, batch_size=5)
+history = model.fit(data_generator, epochs=10)
+
+history.history
+
+results = model.evaluate()

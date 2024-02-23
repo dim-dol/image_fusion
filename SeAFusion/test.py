@@ -9,8 +9,7 @@ from FusionNet import FusionNet
 from tqdm import tqdm
 
 # To run, set the fused_dir, and the val path in the TaskFusionDataset.py
-def main(ir_dir='../../dataset/dataset_eoir/IR', vi_dir='../../dataset/dataset_eoir/EO', save_dir='../../dataset/seafusion_result', fusion_model_path='./model/Fusion/fusionmodel_final.pth'):
-    #def main(ir_dir='./test_imgs/ir', vi_dir='./test_imgs/vi', save_dir='./SeAFusion', fusion_model_path='./model/Fusion/fusionmodel_final.pth'):
+def main(ir_dir='../dataset/dataset_eoir/IR', vi_dir='../dataset/dataset_eoir/EO', save_dir='../dataset/seafusion_result', fusion_model_path='./model/Fusion/fusionmodel_final.pth'):
     fusionmodel = FusionNet(output=1)
     device = torch.device("cuda:{}".format(args.gpu) if torch.cuda.is_available() else "cpu")
     fusionmodel.load_state_dict(torch.load(fusion_model_path))
@@ -48,9 +47,9 @@ if __name__ == '__main__':
     ## model
     parser.add_argument('--model_path', '-M', type=str, default='./model/Fusion/fusionmodel_final.pth')
     ## dataset
-    parser.add_argument('--ir_dir', '-ir_dir', type=str, default='../../dataset/dataset_eoir/IR')
-    parser.add_argument('--vi_dir', '-vi_dir', type=str, default='../../dataset/dataset_eoir/EO')
-    parser.add_argument('--save_dir', '-save_dir', type=str, default='../../dataset/seafusion_result')
+    parser.add_argument('--ir_dir', '-ir_dir', type=str, default='../dataset/dataset_eoir/IR')
+    parser.add_argument('--vi_dir', '-vi_dir', type=str, default='../dataset/dataset_eoir/EO')
+    parser.add_argument('--save_dir', '-save_dir', type=str, default='../dataset/seafusion_result')
     parser.add_argument('--batch_size', '-B', type=int, default=1)
     parser.add_argument('--gpu', '-G', type=int, default=0)
     parser.add_argument('--num_workers', '-j', type=int, default=8)

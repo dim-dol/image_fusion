@@ -7,7 +7,7 @@ class adaptive_densenet():
     def __init__(self):
         self.weight_vars = []
 
-        with tf.variable_scope('adaptive_densenet'):
+        with tf.compat.v1.variable_scope('adaptive_densenet'):
             self.weight_vars.append(self._create_variables(4, 16, 3, scope='conv_0'))
             self.weight_vars.append(self._create_variables(16, 16, 3, scope='dense_1'))
             self.weight_vars.append(self._create_variables(32, 16, 3, scope='dense_2'))
@@ -18,9 +18,9 @@ class adaptive_densenet():
             self.weight_vars.append(self._create_variables(32, 3, 3, scope='conv'))
 
     def _create_variables(self, input_filters, output_filters, kernel_size, scope):
-        with tf.variable_scope(scope):
+        with tf.compat.v1.variable_scope(scope):
             shape = [kernel_size, kernel_size, input_filters, output_filters]
-            kernel = tf.Variable(tf.truncated_normal(shape, stddev=WEIGHT_INIT_STDDEV), name='kernel')
+            kernel = tf.Variable(tf.compat.v1.truncated_normal(shape, stddev=WEIGHT_INIT_STDDEV), name='kernel')
             bias = tf.Variable(tf.zeros([output_filters]), name='bias')
 
         return (kernel, bias)
@@ -37,7 +37,7 @@ class adaptive_densenet():
                 out = convblock(out, kernel, bias, activate=False)
 
             # conv_0, conv_1
-            elif i == 0 or i== final_layer_idx - 1:
+            elif i == 0 or i == final_layer_idx - 1:
                 out = convblock(out, kernel, bias)
 
             # others
@@ -46,8 +46,6 @@ class adaptive_densenet():
 
         return out
 
-
-# paddings = tf.constant([[0, 0], [1, 1], [1, 1], [0, 0]])
 
 def convblock(c, kernel, bias, activate=True):
 

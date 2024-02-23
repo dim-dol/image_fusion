@@ -48,10 +48,10 @@ def main():
         EO_DIR = '../dataset/dataset_eoir/EO/'
         IR_DIR = '../dataset/dataset_eoir/IR/'
         
-        for i in range(48,400):
+        for i in range(0,400):
             index = i + 1
-            eo_path = EO_DIR +'EO_'+str(index)+'.png'
-            ir_path = IR_DIR +'IR_'+str(index)+'.png'
+            eo_path = EO_DIR +str(index)+'.png'
+            ir_path = IR_DIR +str(index)+'.png'
             generate(eo_path, ir_path, MODEL_SAVE_PATH, model_pre_path, 1, index,fusion_type, output_path=output_save_path)
 
 
